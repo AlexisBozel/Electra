@@ -13,8 +13,7 @@ class RoverTest {
     private Planet planet;
     @BeforeEach
     void setUp() {
-        List<Terrain> terrains = new ArrayList<>();
-        planet = new Planet("Earth", 50.0, terrains, new CoordinateSystem(500.0,500.0));
+        planet = new Planet("Earth", 50.0, new CoordinateSystem(500.0,500.0));
     }
 
     @Test

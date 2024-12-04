@@ -7,14 +7,12 @@ public class Planet {
     private final String name;
     private final double radius;
     private final double circumference;
-    private final List<Terrain> terrains;
     private final CoordinateSystem coordinateSystem;
 
-    public Planet(String name, double radius, List<Terrain> terrains, CoordinateSystem coordinateSystem) {
+    public Planet(String name, double radius, CoordinateSystem coordinateSystem) {
         this.name = name;
         this.radius = radius;
         this.circumference = 2 * Math.PI * radius;
-        this.terrains = new ArrayList<>(terrains);
         this.coordinateSystem = coordinateSystem;
     }
 
@@ -23,10 +21,6 @@ public class Planet {
     }
 
     public Coordinates wrapCoordinates(double latitude, double longitude) {
-        return null;
-    }
-
-    public Terrain getTerrainAt(Coordinates coordinates) {
         return null;
     }
 
